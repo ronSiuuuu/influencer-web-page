@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.poppins-thin {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  /* shared styles */
+  .display-flex{
+    display: flex;
+  }
+  /* card color */
+  .light-grey{
+   color: #787885 ;
+  }
+  /* navbar styles */
+  .nav-bar{
+    gap: 34px;
+    align-items: center;
+  }
+ 
+  .nav-container{
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  
+   li{
+    list-style: none;
+   }
+  .li-link {
+    text-decoration: none;
+     color: rgba(58, 58, 58, 1);
+     font-weight: 500; 
+    
+  }
+  
+  .banner{
+ 
+  background-image: url('images/Circle\ design.svg');
+  background-repeat: no-repeat;
+    background-size: cover;
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width:475px ;
+  
+  
+
+  }
+.banner-img{
+  width: 100%;
+}
+
+
+.hero{
+    max-width: 1150px;
+    width: 100%;
+ 
+   
+  
+    margin: 0 auto;
+    gap: 131px;
+    margin-bottom: 170px;
+}
+.hero-tile{
+    font-size: 3.25rem;
+    font-weight: 700;
+   
+    
+
+}
+
+.hero-description{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #3A3A3A;
+}
+.hero-btn{
+    color: #FFFFFF;
+    background-color:#E02C6D ;
+    padding: 10px 24px;
+    border-radius: 40px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+
+}
+/* sponsor */
+.sponsor{
+  
+ 
+ 
+  display: flex;
+  
+  padding: 20px;
+
+  background: linear-gradient(#c0ccda16,#c0ccda30,#c0ccda16); 
+
+ max-width: 900px;
+ width: 100%;
+
+ 
+ margin: 0 auto;
+ 
+}
+.sponsor-icon{
+    
+
+  display: flex;
+
+gap: 30px;
+align-items: center;
+
+width: 100%;
+margin: 0 auto;
+ 
+  
+}
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(  3,1fr);
+  gap: 30px;
+  
+  margin: 0 auto;
+
+}
+.card-title{
+  text-align: center;
+ 
+}
+.card{
+  box-shadow: 0 0 40px 0 #00000022;
+  padding: 17px 15px;
+  border-radius: 5px;
+ 
+  
+}
+.card-img{
+width: 300px;
+height: 256px;
+}
+.product-description{
+  font-weight: bold;
+
+}
+.product-price{
+  color: black;
+  font-weight: 600;
+}
+.product-rating{
+  font-weight: 500;
+}
+/* product */
+.product{
+  
+  max-width: 1047px;
+  margin: 0 auto;
+  margin-top: 71px;
+  margin-bottom: 150px;
+}  
+
+.left-arrow{
+  color: #E02C6D;
+  font-weight: bold;
+  text-align: right;
+}
+.gear-btn{
+  background-color: #E02C6D;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 24px;
+}
+.gear-description{
+  font-weight: bold;
+  color: gray;
+}
+.gear {
+  display: flex;
+  max-width: 1110px;
+  margin:  0 auto;
+  gap:96px;
+}
+
+.footer-icon{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.ending{
+  background-color: black;
+  color : white;
+  text-align: center;
+  padding: 50px;
+  margin-top: 50px;
+}
+.footer.title{
+  font-weight:  bold;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive for mobile */
+@media screen and (max-width: 576px) {
+.nav-container,.nav-bar,.sponsor,.gear{
+    flex-direction: column;
+}
+
+.sponsor{
+  padding: 5px;
+}
+.sponsor-icon{
+  grid-template-columns: repeat(4,1fr);
+  margin-bottom: 30px;
+  align-items: center;
+  justify-items: center;
+ 
+}
+.hero{
+    flex-direction: column-reverse;
+    text-align: center;
+}
+.nav-container{
+  align-items: center;
+}
+.card-container{
+  grid-template-columns: repeat(1,1fr);
+}
+.left-arrow{
+  padding-right: 20px;
+}
+   .product{
+    padding: 20px;
+   }
+}
